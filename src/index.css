@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-comic: "Comic Neue", cursive;
+  --font-bangers: "Bangers", cursive;
+}
+
+/* Custom retro halftone dots background styling */
+.halftone-bg {
+  background-color: #0b0f19;
+  background-image: radial-gradient(#1e293b 2px, transparent 2px), radial-gradient(#1e293b 2px, transparent 2px);
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+}
+
+.halftone-comic-bg {
+  background-color: #fce38a;
+  background-image: radial-gradient(#f38181 2px, transparent 2px);
+  background-size: 8px 8px;
+}
+
+/* 3D Book perspective styles */
+.book-container {
+  perspective: 1500px;
+}
+
+/* Glossy cover finish overlay */
+.glossy-finish {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    rgba(255, 255, 255, 0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Comic bubble spikes */
+.bubble-spike-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 20px;
+  border-width: 10px 10px 0;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+}
+
+.bubble-spike-top::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: white transparent;
+  display: block;
+  width: 0;
+}
+

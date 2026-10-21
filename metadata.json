@@ -1,0 +1,6 @@
+{
+  "name": "Infinite Heroes",
+  "description": "An interactive full-stack comic book generator powered by Gemini, featuring a 3D book layout, character sheets, customized presets, translation support, and offline-ready persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
